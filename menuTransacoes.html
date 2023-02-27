@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/menuTransacoes.css">
+    <title>Moraes Bank</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Moraes Bank</a></li>
+            <li><a href="#" class="btn-menu" onclick="sairTransacoes()">Sair da conta</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-bg container-principal">
+        <div class="conteudo-transacoes">
+            <div class="header-transacoes">
+                <h1>Menu | Transações</h1>
+                <button class="btn-recarregar-valores" id="recarregar" onclick="recarregarValores()">🔄</button>
+            </div>
+            <div class="caixas-transacoes">
+                <div class="caixa-valores">
+                    <h2>Saldo R$</h2>
+                    <p id="valorDoSaldo" value="0"></p>
+                </div>
+                <div class="caixa-valores">
+                    <h2>Saque R$</h2>
+                    <p id="valorDoSaque"></p>
+                </div>
+                <div class="caixa-valores">
+                    <h2>Deposito R$</h2>
+                    <p id="valorDoDeposito"></p>
+                </div>
+            </div>  
+            <div class="btn-transacoes">
+                <div class="sacar">
+                    <input type="text" min="0" step="200" placeholder="Informe o valor para saque" class="input-transacoes" id="inputSaque">
+                    <input type="button" value="Sacar" class="btn-sacar" onclick="sacar()">
+                </div>
+                <div class="depositar">
+                    <input type="text" min="0" step="200" placeholder="Informe o valor de deposito" class="input-transacoes" id="inputDeposito">
+                    <input type="button" value="Depositar" class="btn-depositar" onclick="depositar()">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

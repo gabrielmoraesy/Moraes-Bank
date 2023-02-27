@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-bg {
+    background-color: #eee;
+}
+
+/* Menu */
+.nav-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.nav-menu a {
+    color: #0500f5;
+    font-size: 2rem;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+}
+
+.btn-menu:hover {
+    background-color: #0500f5;
+    color: white;
+    border-radius: 50px;
+}
+
+/* Contéudo Principal */
+
+.container-principal {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-transacoes {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 450px;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 16%);
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.header-transacoes {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-recarregar-valores {
+    background: transparent;
+    border: none;
+    font-size: 4rem;
+    margin-right: 4rem;
+}
+
+.btn-recarregar-valores:hover {
+    cursor: pointer;
+}
+
+.header-transacoes h1 {
+    color: #0500f5;
+    font-size: 5rem;   
+    margin-left: 4rem; 
+}
+
+.caixas-transacoes {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.caixa-valores {
+    background-color: #dfe6ec;
+    width: 30%;
+    padding: 3.5rem 4rem;
+    border-radius: 15px;
+}
+
+div > h2 {
+    font-size: 3rem;
+}
+
+div > p {
+    font-size: 3rem;
+}
+
+.btn-transacoes {
+    display: flex;
+    flex: 1 1 320px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sacar {
+    display: flex;
+    flex-direction: column;
+}
+
+.depositar {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-transacoes {
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border: 0 none;
+    outline: 0;
+    border-bottom: 3px solid #eee;
+}
+
+.input-transacoes::placeholder {
+    color: #4d677e;
+}
+
+.input-transacoes:focus {
+    box-shadow: 5px 5px 5px #eee;
+}
+
+.btn-sacar,
+.btn-depositar {
+    font-size: 1.8rem;
+    padding: 1.5rem;
+    border: 0 none;
+    background: #dfe6ec;
+    color: #000;
+}
+
+.btn-sacar:hover,
+.btn-depositar:hover {
+    background-color: #0500f5;
+    color: white;
+    cursor: pointer;
+}
+
+/* Dispositivos Móveis */
+@media (max-width: 320px) or (max-width: 480px) {
+    .conteudo-transacoes {
+        width: 350px;   
+        height: 500px;   
+    }
+
+    .header-transacoes {
+        margin-top: 0.5rem;
+    }
+    
+    .btn-recarregar-valores {
+        font-size: 2.5rem;
+        margin-right: 1.5rem;
+    }
+    
+    .header-transacoes h1 {
+        color: #0500f5;
+        font-size: 2.7rem;   
+        margin-left: 1.5rem; 
+    }
+
+    .caixas-transacoes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caixa-valores {
+        width: 90%;
+        margin: 0.5rem auto;
+        padding: 1rem;
+    }
+
+    div > h2 {
+        font-size: 1.8rem;
+    }
+
+    .input-transacoes {
+        width: 150px;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .btn-sacar,
+    .btn-depositar {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* IPads e Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+    .conteudo-transacoes {
+        width: 500px;
+        height: 500px;  
+    }
+
+    .header-transacoes {
+        margin-top: 1rem;
+    }
+    
+    .btn-recarregar-valores {
+        font-size: 4rem;
+        margin-right: 3rem;
+    }
+    
+    .header-transacoes h1 {
+        color: #0500f5;
+        font-size: 4rem;   
+        margin-left: 3rem; 
+    }
+
+    .caixa-valores {
+        width: 30%;
+        margin: 0.5rem auto;
+        padding: 2.5rem;
+    }
+
+    div > h2 {
+        font-size: 2.5rem;
+    }
+
+    .input-transacoes {
+        width: 200px;
+        font-size: 2rem;
+    }
+
+    .btn-sacar,
+    .btn-depositar {
+        font-size: 1.8rem;
+        padding: 1.5rem;
+    }
+}
+
+/* Telas pequenas e Laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .conteudo-transacoes {
+        width: 700px;
+        height: 450px;  
+    }
+    
+    .caixa-valores {
+        width: 30%;
+        margin: 0.5rem auto;
+        padding: 3rem;
+    }
+
+    div > h2 {
+        font-size: 2.5rem;
+    }
+
+    .input-transacoes {
+        width: 250px;
+        font-size: 2rem;
+    }
+
+    .btn-sacar,
+    .btn-depositar {
+        font-size: 2rem;
+        padding: 1.8rem;
+    }
+}
+
+/* Desktops e Telas Grandes */
+@media (min-width: 1024px) and (max-width: 1200px) {
+    .conteudo-transacoes {
+        width: 900px;
+        height: 450px;  
+    }
+}
+
+
+
