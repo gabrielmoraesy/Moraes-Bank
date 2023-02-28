@@ -160,7 +160,7 @@ div > p {
 }
 
 /* Dispositivos Móveis */
-@media (max-width: 320px) or (max-width: 480px) {
+@media (max-width: 480px) {
     .conteudo-transacoes {
         width: 350px;   
         height: 500px;   
