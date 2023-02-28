@@ -45,11 +45,6 @@ html {
     border-radius: 50px;
 }
 
-.espacamento {
-    height: 67px;
-    display: none;
-}
-
 /* Contéudo Principal */
 .container-principal {
     min-height: 100vh;
@@ -142,12 +137,7 @@ html {
 }
 
 /* Dispositivos Móveis */
-@media (max-width: 320px) or (max-width: 480px) {
-    .espacamento {
-        height: 30px;
-        display: block;
-    }
-    
+@media (max-width: 480px) {
     .conteudo-login {
         width: 90%;
         height: 500px;
