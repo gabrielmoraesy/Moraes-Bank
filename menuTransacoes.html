@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/menuTransacoes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Moraes Bank</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#">Moraes Bank</a></li>
+            <li><a href="#" class="btnSair">Sair</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-bg container-principal">
+        <div class="conteudo-transacoes">
+            <div class="header-transacoes">
+                <h1>Menu | Transações</h1>
+                <i class="fa-solid fa-rotate-right btnRecarregar"></i>
+            </div>
+            <div class="caixas-transacoes">
+                <div class="caixa-valores">
+                    <h2>Saldo R$</h2>
+                    <p class="valorDoSaldo"></p>
+                </div>
+                <div class="caixa-valores">
+                    <h2>Saque R$</h2>
+                    <p class="valorDoSaque"></p>
+                </div>
+                <div class="caixa-valores">
+                    <h2>Deposito R$</h2>
+                    <p class="valorDoDeposito"></p>
+                </div>
+            </div>  
+            <div class="btn-transacoes">
+                <div class="sacar">
+                    <input type="text" placeholder="Informe o valor para saque" class="inputSaque" inputmode="decimal" onkeypress="apenasNumeros()">
+                    <input type="button" value="Sacar" class="btnSacar">
+                </div>
+                <div class="depositar">
+                    <input type="text" placeholder="Informe o valor de deposito" class="inputDeposito" inputmode="decimal" onkeypress="apenasNumeros()">
+                    <input type="button" value="Depositar" class="btnDepositar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/menuTransacoes.js"></script>
+</body>
+</html>
