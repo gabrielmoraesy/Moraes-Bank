@@ -135,6 +135,10 @@ html {
 
 /* Dispositivos Móveis */
 @media (max-width: 480px) {
+    .nav-menu a {
+        font-size: 1.5rem;
+    }
+    
     .conteudo-login {
         width: 90%;
         height: 500px;
@@ -161,6 +165,12 @@ html {
     .login p {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .conteudo-login {
+        margin: 1rem;
     }
 }
 

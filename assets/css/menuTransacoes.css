@@ -159,6 +159,10 @@ div > p {
 
 /* Dispositivos Móveis */
 @media (max-width: 480px) {
+    .nav-menu a {
+        font-size: 1.5rem;
+    }
+    
     .conteudo-transacoes {
         width: 350px;   
         height: 500px;   
